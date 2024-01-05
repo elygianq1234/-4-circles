@@ -1,0 +1,191 @@
+body{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient( to right, #E0FFFF  , #48D1CC );
+}
+
+
+.square{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    
+}
+
+
+.circle{
+    position: absolute;
+    --circlesize: 75px;
+    --circlesize2: 50%;
+}
+
+
+
+
+
+.one{
+    width: var(--circlesize);
+    height: var(--circlesize); 
+    background-color: red;
+    border-radius: var(--circlesize2);
+    animation: one 3s  infinite; 
+    top: 0;
+    left: 0;
+   }
+   
+   
+   
+   @keyframes one {
+       0%{
+           top: 0;
+           left: 0;
+       }
+     
+     25%{
+        top: 0;
+         left: calc(100% - var(--circlesize));
+     }
+     
+     50%{
+        top: calc(100% - var(--circlesize));
+        left: calc(100% - var(--circlesize));
+     }
+     75%{
+        top: calc(100% - var(--circlesize));
+         left: 0;
+     }
+     
+     100%{
+       top: 0;
+       left: 0;
+     }
+   }
+   
+   
+    .two{
+    width: var(--circlesize);
+    height: var(--circlesize); 
+    background-color: green;
+    border-radius: var(--circlesize2);
+    top: 0;
+    left: calc(100% - var(--circlesize));
+    animation: two 3s infinite;
+   } 
+   
+   
+    @keyframes two{
+     0%{
+       top: 0;
+       left: calc(100% - var(--circlesize));
+      
+     }
+     
+     25%{
+        top: calc(100% - var(--circlesize));
+        left: calc(100% - var(--circlesize));
+     }
+     
+     50%{
+       top: calc(100% - var(--circlesize));
+       left: 0;
+     }
+     
+     75%{
+     top: 0;
+     left: 0;
+       
+     }
+     
+     
+     100%{
+        top: 0;
+       left: calc(100% - var(--circlesize));
+     }
+     
+     
+   } 
+   
+   
+   
+   
+   
+   
+   .three{
+     width: var(--circlesize);
+    height: var(--circlesize); 
+    background-color: orange;
+    border-radius: var(--circlesize2);
+    top: calc(100% - var(--circlesize));
+    left: calc(100% - var(--circlesize));
+    animation: three 3s infinite;
+   }
+   
+   
+   @keyframes three{
+     0%{
+        top: calc(100% - var(--circlesize));
+        left: calc(100% - var(--circlesize));
+     }
+     
+     25%{
+       top: calc(100% - var(--circlesize));
+       left: 0;
+     }
+     
+     50%{
+        top: 0;
+        left: 0;
+     }
+     
+     75%{
+       top: 0;
+      left: calc(100% - var(--circlesize));
+     }
+     
+     100%{
+        top: calc(100% - var(--circlesize));
+        left: calc(100% - var(--circlesize));
+     }
+   }
+   
+   
+   .four{
+    width: var(--circlesize);
+    height: var(--circlesize); 
+    background-color: blue;
+    border-radius: var(--circlesize2);
+    top: calc(100% - var(--circlesize));
+    left: 0;
+    animation: four 3s infinite;
+   }
+   
+   
+   
+   @keyframes four{
+     0%{
+        top: calc(100% - var(--circlesize));
+        left: 0;
+     }
+     
+     25%{
+        top: 0;
+        left: 0;
+     }
+     
+     50%{
+        top: 0;
+        left: calc(100% - var(--circlesize));
+     }
+     
+     75%{
+       top: calc(100% - var(--circlesize));
+       left: calc(100% - var(--circlesize));
+     }
+     
+     100%{
+         top: calc(100% - var(--circlesize));
+        left: 0;
+     }
+   }
